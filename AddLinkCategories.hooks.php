@@ -8,7 +8,6 @@ class AddLinkCategories{
 
     public static function AddClass( $dummy, $target, &$html, &$attribs, &$query ) {
         if ($query) return true;
-        error_log(print_r('hhh',true));
         $adc = new self();
         $category = array_keys($target->getParentCategories());
         $filter =  $adc->getWhitelist();
