@@ -1,0 +1,25 @@
+{
+  "name": "AddLinkCategories",
+  "version": "0.1.0",
+  "author": [
+    "48pedia"
+  ],
+  "url": "",
+  "descriptionmsg": "addlinkcategories-desc",
+  "license-name": "",
+  "type": "betafeatures",
+  "AutoloadClasses": {
+    "AddLinkCategories": "AddLinkCategories.hooks.php"
+  },
+  "Hooks": {
+    "LinkBegin": [
+      "AddLinkCategories::AddClass"
+    ]
+  },
+  "MessagesDirs": {
+    "AddLinkCategories": [
+      "i18n"
+    ]
+  },
+  "manifest_version": 1
+}
